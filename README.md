@@ -1,9 +1,8 @@
 # Simulation of the Nucleus Accumbens with Spiking Neural Networks
 
-Did you know that ARTIFICIAL neural networks can also be used to simulate NATURAL neural networks? This repository contains a simulation of the Nucleus Accumbens (NAcc) using a Spiking Neural Network (SNN), to explore a way to study its behavior, especially how it handles rewards and motivation, by creating a digital version. Researchers are increasingly exploring such simulations for brain research, and I wanted to try it out on a small scale with this small project.
-
+Did you know that ARTIFICIAL neural networks can also be used to simulate NATURAL neural networks? This repository contains a simulation of the Nucleus Accumbens (NAcc) using a Spiking Neural Network (SNN), to explore a way to study its behavior, especially how it handles rewards and motivation, by creating a digital version. Researchers are increasingly exploring such simulations for brain research, and I wanted to try it out on a small scale with this project.
 ## What is the Nucleus Accumbens?
-The Nucleus Accumbens (NAcc) is a key brain region in the reward system. It helps us experience pleasure, motivation, and rewards, like eating something tasty or achieving goals that make us happy. It works with Medium-Spiny-Neurons (MSNs), inhibitory interneurons, and excitatory inputs from other brain areas. Neurons in the NAcc fire spikes—short electrical signals—to transmit information.
+The Nucleus Accumbens (NAcc) is a key brain region in the reward system. It helps us experience pleasure, motivation, and rewards, like eating something tasty or achieving goals. It works with Medium-Spiny-Neurons (MSNs), inhibitory interneurons, and excitatory inputs from other brain areas. Neurons in the NAcc fire spikes—short electrical signals—to transmit information.
 
 This code simulates the NAcc with an SNN because it models the main neuron types, their connections, and spiking behavior. It helps explore reward and motivation by simulating random inputs and dynamic interactions.
 
@@ -20,8 +19,9 @@ The code uses `snntorch` to create a network with three main types of neurons, e
 
 ## How to interpret the plots
 The code displays four plots:
-1. **Input Neurons Activity (Raster Plot):** Black lines show when neurons fire (0–99). Irregular spacing indicates variable brain input. The red line marks the current time step.
-2. **Interneurons Activity (Raster Plot):** Sparser lines (0–49) show how they inhibit MSNs.
-3. **MSNs Activity (Raster Plot):** More frequent lines (0–19) reflect the combined effect of inputs and inhibition. More lines suggest stronger reward responses.
-4. **Input Neurons → Interneurons Activity (Heatmap):** Blue shows activity between input neurons (0–99) and interneurons (0–49). White (weak activity < 0.1) is neutral, while light blue areas indicate strong interactions, revealing how inputs influence inhibition.
+1. **Input Neurons Activity (Raster Plot):** Black lines show when neurons fire (0–99). Irregular spacing indicates variable brain input
+2. **Interneurons Activity (Raster Plot):** Sparser lines (0–49) show how they inhibit MSNs
+3. **MSNs Activity (Raster Plot):** More frequent lines (0–19) reflect the combined effect of inputs and inhibition. More lines suggest stronger reward responses
+4. **Input Neurons → Interneurons Activity (Heatmap):** Blue shows activity between input neurons (0–99) and interneurons (0–49). White (weak activity < 0.1) is neutral, while light blue areas indicate strong interactions, revealing how inputs influence inhibition
 
+As a disclaimer though, this code only simulates the Nucleus Accumbens on a very abstract level and a very tiny scale.
