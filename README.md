@@ -1,6 +1,6 @@
 # Simulation of the Nucleus Accumbens with Spiking Neural Networks
 
-Did you know that artificial neural networks can also be used to simulate natural neural networks? This repository contains a simulation of the Nucleus Accumbens (NAcc) using a Spiking Neural Network (SNN), providing insights into brain reward and motivation processes.
+Did you know that ARTIFICIAL neural networks can also be used to simulate NATURAL neural networks? This repository contains a simulation of the Nucleus Accumbens (NAcc) using a Spiking Neural Network (SNN), providing insights into brain reward and motivation processes.
 
 ### What is Nucleus Accumbens Simulation?
 The "Nucleus Accumbens Simulation" refers to using this code to mimic how the Nucleus Accumbens works in the brain. It’s like creating a digital version of this brain region to study its behavior, especially how it handles rewards and motivation. By running this simulation, we can see how neurons fire and interact, helping researchers understand real brain processes without experimenting directly on people or animals.
